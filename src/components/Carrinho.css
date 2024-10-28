@@ -1,0 +1,61 @@
+.carrinho-principal{
+    position: fixed;
+    top: 100px;
+    right: 0;
+    width: 300px;
+    height: calc(100% - 100px);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+}
+
+.carrinho-header{
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.btn-fechar{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.carrinhoConteudo{
+    padding: 15px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.carrinhoFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+    gap: 10px;
+    border-top: 1px solid rgb(110, 110, 110);
+}
+
+.finalizarCompra{
+    border: 3px solid transparent;
+    background-color: rgb(42, 183, 42);
+    width: 60%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.carrinho-vazio{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.itemCarrinho{
+    display: flex;
+}

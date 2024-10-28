@@ -1,0 +1,31 @@
+[
+    {
+        "id":1,
+        "nome":"X-burger",
+        "descricao":"Hambúrguer com 80g de carne, queijo, molho especial, tomate e alface",
+        "preco":20.00,
+        "imagem":"X-burger.jpg"
+        
+        
+    },
+    
+    {
+        "id":2,
+        "nome":"X-bacon",
+        "descricao":"Hambúrguer com 80g de carne, queijo, molho especial, tomate, alface e muito bacon",
+        "preco":23.00,
+        "imagem":"X-bacon.jpg"
+        
+        
+    },
+
+    {
+        "id":3,
+        "nome":"X-burger duplo",
+        "descricao":"Hambúrguer com 160g de carne, queijo, molho especial, tomate e alface",
+        "preco":29.00,
+        "imagem":"X-burger duplo.jpg"
+        
+        
+    }
+]
