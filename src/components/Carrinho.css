@@ -58,4 +58,11 @@
 
 .itemCarrinho{
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.item-preco{
+    color: green;
 }

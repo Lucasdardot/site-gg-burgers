@@ -1,12 +1,20 @@
 import "./Navbar.css" 
-import { FaShoppingCart } from "react-icons/fa";
+import { FaShoppingCart,FaBars, FaTimes } from "react-icons/fa";
+import {useState} from "react"
 import { Link } from 'react-router-dom';
 function Navbar ({abrirCarrinho}){
+    const[menuAberto,setMenuAberto] = useState(false)
+    const togleMenu = ()=>{
+        setMenuAberto(!menuAberto)
+    }
     return(
         <nav className="nav">
             
-            
-                <ul>
+                <div className="menu-icon" onClick={togleMenu}>
+                    {menuAberto ? <FaTimes/> :<FaBars/>  }
+
+                </div>
+                <ul className={`menu ${menuAberto ? 'aberto' : ''}`}>
                     <li><Link to='/'><img src="./src/assets/gg 1.png" alt="" /></Link></li>
                     <li><Link className="item-nav" to='/sobre-nos'>SOBRE NÓS</Link></li>
                     <li><Link className="item-nav" to='/contato'>CONTATO</Link></li>

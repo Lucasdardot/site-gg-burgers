@@ -30,6 +30,26 @@ function App() {
       abrirCarrinho()
   }
 
+  const removerDoCarrinho = (id)=>{
+    const item = itensCarrinho.find((item)=>{
+      item.id === id
+      console.log(item)
+      //se a quantiadde do item é igual a 1, remove o item
+      if(item.quantidade === 1){
+        setItensCarrinho(itensCarrinho.filter((item =>item.id !==id)))
+      }else{
+        setItensCarrinho(
+          itensCarrinho.map((item)=>( 
+            item.id === id 
+            ?{...item,quantidade: item.quantidade -1}
+            :item
+          ))
+        )
+      }
+
+      //se a quantidade for maior que 1, subtrai da quantidede
+    })
+  }
 
 
   const [isCarrinhoOpen, setIsCarrinhoOpen] = useState(false)
@@ -54,7 +74,7 @@ function App() {
     </Routes>
 
     </div>
-    {isCarrinhoOpen && <Carrinho fecharCarrinho ={fecharCarrinho} itensCarrinho = {itensCarrinho}/>}
+    {isCarrinhoOpen && <Carrinho fecharCarrinho ={fecharCarrinho} itensCarrinho = {itensCarrinho} removerDoCarrinho = {removerDoCarrinho}/>}
    </Router>
   )
 }

@@ -4,7 +4,7 @@ function Sobre() {
     return (
         <section className="sobre">
             <div className="fundo">
-                <div className="content">
+                <div className="content content-sobre">
                     <div className="textSobre">
                         <div className="titleSobre  "><h1 className="sobreTitle">SOBRE NÓS</h1></div>
                         <div className="sobreText">Bem-vindo à GG Burgers,

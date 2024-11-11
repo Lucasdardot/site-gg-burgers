@@ -2,7 +2,8 @@ import "./Carrinho.css";
 import { IoCloseSharp } from "react-icons/io5";
 import { FaRegTrashCan } from "react-icons/fa6";
 
-function Carrinho({ fecharCarrinho, itensCarrinho }) {
+function Carrinho({ fecharCarrinho, itensCarrinho, removerDoCarrinho }) {
+    const total = itensCarrinho.reduce((acumulador, item)=>{return acumulador + item.preco * item.quantidade},0)
     return (
         <div className="carrinho-principal">
             <div className="carrinho-header">
@@ -18,17 +19,19 @@ function Carrinho({ fecharCarrinho, itensCarrinho }) {
                             <div>
                                 <h3>{item.nome}</h3>
                                 <p>Quantidade: {item.quantidade}</p>
-                                <p>R$: {(item.preco * item.quantidade).toFixed(2)}</p>
+                                <p className="item-preco">R$: {(item.preco * item.quantidade).toFixed(2)}</p>
                             </div>
                             <div>
-                                <button className="btn-remover"><FaRegTrashCan /></button>
+                                <button onClick={() => {
+                                    removerDoCarrinho(item.id)
+                                }} className="btn-remover"><FaRegTrashCan /></button>
                             </div>
                         </div>
                     ))
                 )}
             </div>
             <div className="carrinhoFooter">
-                <h2>Total: R$100,00</h2>
+                <h2 className="preco-total">Total: { total.toFixed(2)}</h2>
                 <button className="finalizarCompra">Finalizar compra</button>
             </div>
         </div>

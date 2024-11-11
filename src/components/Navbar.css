@@ -10,6 +10,23 @@ nav{
     padding-right: 100px;
 }   
 
+.menu-icon{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.menu .aberto{
+    display: flex;
+    flex-direction: column;
+    
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+}
 
 .cardapiobutton{
     text-decoration: none;
@@ -72,4 +89,29 @@ ul li{
     cursor: pointer;
     color: black;
     border-radius: 5px;
+}
+
+@media (max-width: 950px){
+    .menu-icon{
+        display: block;
+    }
+
+    ul{
+        display: none;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        gap: 10px;
+        background-color: black;
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    .menu.aberto{
+        display: flex;
+        z-index: 1000;
+    }
 }

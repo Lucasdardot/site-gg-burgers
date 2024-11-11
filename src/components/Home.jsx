@@ -6,7 +6,7 @@ function Home() {
             <div className="fundo">
                 <div className="content">
                     <div className="burgerimg">
-                        <div className="img-home"><img src="src\assets\burger.png" alt="" /></div>
+                    <img src="src\assets\burger.png" alt="" />
                     </div>
                     <div className="texts">
                         <div className="title">
