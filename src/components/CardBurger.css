@@ -54,3 +54,9 @@ img{
     font-size: 19px;
 
 }
+
+@media(max-width:450px){
+    .burger-card{
+        margin-right: 0px;
+    }
+}

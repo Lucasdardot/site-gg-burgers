@@ -2,7 +2,7 @@ import "./Sobre.css"
 import Button from "./Button"
 function Sobre() {
     return (
-        <section className="sobre">
+        <section className="homebody">
             <div className="fundo">
                 <div className="content content-sobre">
                     <div className="textSobre">

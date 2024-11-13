@@ -1,24 +1,13 @@
-.sobre{
-    background-image: url(src/assets/fundohome.png);
-    width: 100%;
-    height: calc(100vh - 80px);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.fundo{
-    width: 100%;
-    height: 100%;
-    background-color: #ffde59c9;
-    
-}
-
 .titleSobre h1{ 
     text-align: center;
-    font-size: 4em;
+    font-size: 2em;
     display: absolute;
     top: 20px;
     
+}
+
+.content-sobre{
+    flex-direction: column;
 }
 
 .titleSobre{
@@ -36,12 +25,6 @@
    justify-content: center  ;
     height: 100%;
     flex-direction: column;
-}
-.textSobre{
-  
-    height: calc(100vh - 80px);
-    text-align: justify;
-
 }
 
 .sobreText{
@@ -63,8 +46,9 @@
 
 .imgDiv{
     border: 5px solid black;
-    width: 42%;
-    height: 60%;
+    width: 300px;
+    height: 300xp;
+    margin-top: 40px;
 }
 
 .image{

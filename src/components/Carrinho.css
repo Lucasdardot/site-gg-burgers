@@ -66,3 +66,9 @@
 .item-preco{
     color: green;
 }
+
+@media(max-width: 450px){
+    .carrinho-principal{
+        width: 100%;
+    }
+}

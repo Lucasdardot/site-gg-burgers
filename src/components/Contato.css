@@ -7,19 +7,20 @@
 }
 
 .cards{
-    height: 600px;
     margin-top: 70px;
     width: 90%;
     display: flex;
-    justify-content: space-between;
+    gap: 40px;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .card{
     background-color: white;
     border: 3px solid black;
-    width: 30%;
-    height: 70%;
+    height: 350px;
+    width: 350px;
 }
 
 .card:hover{
@@ -33,6 +34,11 @@
 
 .horario{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 30px;
 }
 
 .horario h2{
@@ -92,4 +98,22 @@ iframe{
     display: flex;
     align-items: center;
     justify-content: center;
+ }
+
+ @media(min-width: 1150px){
+    .main{
+        height: 100vh;
+    }
+ }
+
+ @media(max-width:1400px){
+    .main{
+        height: 100vh;
+    }
+ }
+
+ @media(max-width: 450px){
+    .social{
+        margin-bottom: 0px;
+    }
  }
