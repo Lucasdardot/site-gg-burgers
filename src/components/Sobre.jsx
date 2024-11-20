@@ -1,4 +1,5 @@
 import "./Sobre.css"
+import imgsobre from "../assets/WhatsApp-Image-2021-12-04-at-17.01.35 1.png"
 import Button from "./Button"
 function Sobre() {
     return (
@@ -20,7 +21,7 @@ function Sobre() {
                     </div>
                     <div className="imgSobre">
                         <div className="imgDiv">
-                        <img src="src\assets\WhatsApp-Image-2021-12-04-at-17.01.35 1.png" alt="" className="image"/>
+                        <img src={imgsobre} alt="" className="image"/>
                         </div>
                         <div className="botao">
                         <Button texto={"FAÇA SUA RESERVA"}/>

@@ -1,4 +1,5 @@
 import "./Home.css"
+import imghome from "../assets/burger.png"
 import Button from "./Button"
 function Home() {
     return (
@@ -6,7 +7,7 @@ function Home() {
             <div className="fundo">
                 <div className="content">
                     <div className="burgerimg">
-                    <img src="src\assets\burger.png" alt="" />
+                    <img src={imghome} alt="" />
                     </div>
                     <div className="texts">
                         <div className="title">
