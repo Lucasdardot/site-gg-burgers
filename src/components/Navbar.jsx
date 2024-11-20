@@ -1,4 +1,5 @@
 import "./Navbar.css" 
+import logoimg from "../assets/gg 1.png"
 import { FaShoppingCart,FaBars, FaTimes } from "react-icons/fa";
 import {useState} from "react"
 import { Link } from 'react-router-dom';
@@ -15,7 +16,7 @@ function Navbar ({abrirCarrinho}){
 
                 </div>
                 <ul className={`menu ${menuAberto ? 'aberto' : ''}`}>
-                    <li><Link to='/'><img src="./src/assets/gg 1.png" alt="" /></Link></li>
+                    <li><Link to='/'><img src={logoimg} alt="" /></Link></li>
                     <li><Link className="item-nav" to='/sobre-nos'>SOBRE NÓS</Link></li>
                     <li><Link className="item-nav" to='/contato'>CONTATO</Link></li>
                     <li><Link className="item-nav" to='/reservas'>RESERVAS</Link></li>
